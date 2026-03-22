@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Web Application (Next.js)
 
-## Getting Started
+##  Live Demo
 
-First, run the development server:
+ https://ecommerce-app-blond-zeta.vercel.app/
+The app is deployed using **Vercel** with GitHub integration.
+
+##  Project Overview
+
+This is a simple e-commerce web application built using **Next.js (App Router)** and **TypeScript**.
+The application allows users to browse products, view details, manage cart and wishlist, and perform a basic checkout.
+
+##  Features
+
+### Product Listing
+
+* Fetch products from a public API
+* Display product image, title, price, and description
+* Loading and error handling
+
+###  Product Details
+
+* Dynamic routing (`/product/[id]`)
+* Full product information
+* Add to Cart & Wishlist
+
+### Cart Functionality
+
+* Add/remove products
+* Increase/decrease quantity
+* Persistent cart using localStorage
+* Subtotal & total calculation
+
+###  Wishlist
+
+* Add/remove items
+* Persist data using localStorage
+
+###  Checkout
+
+* Cart summary
+* Basic form (name, email, address)
+
+
+##  Tech Stack
+
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **State Management:** Context API
+* **Deployment:** Vercel
+
+## API Used
+
+### Fake Store API
+
+  https://fakestoreapi.com/
+
+#### Endpoints:
+
+* Get all products:
+
+  https://fakestoreapi.com/products
+  
+* Get single product:
+
+  https://fakestoreapi.com/products/{id}
+  
+##  Setup Instructions
+
+### 1️. Clone the repository
+
+```bash
+git clone https://github.com/sandhyakushangala26/ecommerce-app.git
+cd ecommerce-app
+```
+
+### 2️. Install dependencies
+
+```bash
+npm install
+```
+
+### 3️. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4️. Open in browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+##  Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
