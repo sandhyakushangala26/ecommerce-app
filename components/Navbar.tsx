@@ -21,6 +21,19 @@ export default function Navbar() {
           PrimeCommerce
         </Link>
 
+        <Link
+          href="/login"
+          className="text-xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400"
+        >
+          Login
+        </Link>
+        <Link
+          href="/events"
+          className="text-xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400"
+        >
+          Filter Page
+        </Link>
+
         <div className="flex gap-6 font-medium text-slate-700 dark:text-slate-300">
           <Link
             href="/cart"
